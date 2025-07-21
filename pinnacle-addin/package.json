@@ -1,0 +1,9 @@
+{
+  "name": "pinnacle-addin",
+  "version": "1.0.0",
+  "description": "Pinnacle Real Estate Excel Add-in",
+  "scripts": {
+    "start": "echo 'Launch taskpane'",
+    "test": "echo 'No tests'"
+  }
+}

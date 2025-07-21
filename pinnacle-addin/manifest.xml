@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>pinnacle-real-estate-addin</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Pinnacle Real Estate</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Pinnacle Real Estate" />
+  <Description DefaultValue="Recalculate operating expenses" />
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="ExcelApi" />
+    </Sets>
+  </Requirements>
+  <Ribbon>
+    <Tabs>
+      <Tab id="TabPinnacleRealEstate" label="Pinnacle Real Estate">
+        <Group id="GroupRun" label="Tools">
+          <Control xsi:type="Button" id="RunButton" label="Run" screentip="Recalculate Operating Expenses" supertip="Recalculate operating expenses and copy to cash flow" onAction="run" size="Large" />
+        </Group>
+      </Tab>
+    </Tabs>
+  </Ribbon>
+</OfficeApp>
